@@ -28,6 +28,7 @@ datetime("2020-02-02 16:00")
 # P3: Make a copy of your code from P1 and edit it to plot the temperature and
 # exposure for "Aialik" on 2012-06-01
 
+kefj_site <- "Aialik"
 hottest_idx <- which.max(kefj_temperature)
 hottest_time <- kefj_datetime[hottest_idx]
 hottest_site <- kefj_site[hottest_idx]
@@ -77,11 +78,27 @@ temp_extraction <- function (start, end, site) {
 # P8: Make a copy of your solution to P7, and edit it to create exposure and
 # datetime extraction functions.
 
+exposure_extraction <- function (start, end, site) {
+  datetime_start <- datetime(start)
+  datetime_end <- datetime(end)
+  site
+  return(exposure)
+}
+
+datetime_extraction <- function (start, end, site) {
+  datetime_start <- datetime(start)
+  datetime_end <- datetime(end)
+  site
+  return(datetime)
+}
 # P9: Export your annotated screenshot as a JPEG called "annotated_function.jpg"
 # and add it to your copy of the module repository. (It should be in the same
 # folder as this file.)
 
 # P10: Visualize Nuka Pass on July 1, 2018.
+plot_kefj(temp_extraction, exposure_extraction, datetime_extraction)
+as.POSIXct(temperature, exposure, datetime)
+#im so sorry but I cant figure out this step
 
 # P11: Save a copy of the Nuka Pass plot as "nuka_pass_2018-07-01.png" in this
 # repo
@@ -89,5 +106,6 @@ temp_extraction <- function (start, end, site) {
 # P12: Compare the code you wrote to create the plot in this module to the code
 # you wrote in PROG101. Qualitatively, how do they compare? Which one is easier
 # to read and why?library(marinecs100b)
-
+#i was unable to write the code to create the plot in this module so I cannot
+#say for sure which is easier to read.
 
