@@ -96,9 +96,12 @@ datetime_extraction <- function (start, end, site) {
 # folder as this file.)
 
 # P10: Visualize Nuka Pass on July 1, 2018.
+kefj_site <- "Nuka Pass"
+day_start <- as.POSIXct("2018-07-01 00:00:00", tz= "Etc/GMT+8")
+day_end <- as.POSIXct("2018-07-01 23:59:59", tz= "Etc/GMT+8")
 plot_kefj(temp_extraction, exposure_extraction, datetime_extraction)
-as.POSIXct(temperature, exposure, datetime)
-#im so sorry but I cant figure out this step
+# ok so i think im going in the right direction here however im getting an
+# error
 
 # P11: Save a copy of the Nuka Pass plot as "nuka_pass_2018-07-01.png" in this
 # repo
@@ -106,6 +109,9 @@ as.POSIXct(temperature, exposure, datetime)
 # P12: Compare the code you wrote to create the plot in this module to the code
 # you wrote in PROG101. Qualitatively, how do they compare? Which one is easier
 # to read and why?library(marinecs100b)
-#i was unable to write the code to create the plot in this module so I cannot
-#say for sure which is easier to read.
+#the codes seem pretty similar to me since they both use similar features such
+# as kefj and as.POSIXct however this may be because I dont have a full enough
+# understanding of each to clearly see differences. The graphs from prog 102
+# do seem a bit easier to understand though, especially because a lot of the
+# elements going into the graph are defined before.
 
